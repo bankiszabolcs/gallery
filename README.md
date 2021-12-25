@@ -1,2 +1,1 @@
-# gallery
-gallery-Project
+# szabi1112.github.io
