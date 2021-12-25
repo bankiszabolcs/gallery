@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background: lightgrey;
+    font-family:'Roboto', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    background: white;
+    align-items:center
+    
+}
+.leftArrow, .rightArrow{
+    flex:.8;
+    text-align: center;
+}
+.rightArrow{
+    transform: rotate(0.5turn);
+}
+.rightArrow img, .leftArrow img{
+    cursor:pointer;
+}
+.image{
+    flex: 12;
+    position:relative;
+}
+.image img{
+   max-width: 100%;
+   text-align: center;
+   z-index: -100;
+}
+.gray-container{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    color: white;
+    padding: 0 15px 0 15px;
+}
+.gray-container h1{
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.gray-container p{
+    margin-top:0;
+    font-weight: lighter;
+} 
+.thumbnails{
+    display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+  .thumbnails img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .thumbnails img{
+	display:inline-block;
+	color: #354052;
+	background: white;
+	margin: 10px 10px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+    height: 72px;
+    cursor:pointer;
+	
+}
+.thumbnails .thumbnail .title {
+    display: none;
+    position: relative;
+    background: rgba(0, 0, 0, 0.808);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: -110px;
+    left: 0;
+    font-weight: lighter;
+  }
+  
+ .thumbnails .thumbnail:hover .title {
+    display: block;
+
+ }
+
+ .arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    position: relative;
+    top:11px;
+    left:45px;
+  }
